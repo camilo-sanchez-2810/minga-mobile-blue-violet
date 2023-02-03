@@ -1,12 +1,12 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { API_URL } from "../../configs";
+import { apiURL } from "../../../configs";
 
 const getChapter = createAsyncThunk(
   'get-chapter',
   async (id, { rejectWithValue }) => {
     try {
-      const res = await axios.get(`${API_URL}chapters/${id}`)
+      const res = await axios.get(`${apiURL}chapters/${id}`)
       console.log(res.data)
       return {
         success: true,
