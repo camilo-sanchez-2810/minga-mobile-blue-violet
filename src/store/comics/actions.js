@@ -7,9 +7,9 @@ const getComics = createAsyncThunk(
     //solo deja enviar 1 parametro
     try {
       let comics = await axios.get(
-        `http://localhost:8080/api/comics?title=${inputText}&category_id=${inputCategory}&page=${page}`
+        `https://minga-backendo.onrender.com/api/comics?title=${inputText}&category_id=${inputCategory}&page=${page}`
       );
-      //console.log(inputCategory);
+      //console.log(comics.data.response);
       return {
         success: true,
         response: {

@@ -5,7 +5,7 @@ const getComic= createAsyncThunk(
     "getComic",
     async (idComic) => { 
         try{ 
-            let response= await axios.get(`http://localhost:8080/api/comics/${idComic}`)
+            let response= await axios.get(`https://minga-backendo.onrender.com/api/comics/${idComic}`)
             return {
                 response: {idComic: response.data},
                 message: "comic obtain",

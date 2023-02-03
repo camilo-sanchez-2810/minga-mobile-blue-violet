@@ -12,7 +12,7 @@ const filterCategoryReducer = createReducer(
   (builder) => {
     builder
       .addCase(filterCategoryComics, (state, action) => {
-        //console.log(action.payload)
+        console.log(action.payload)
         if(state.filterCategory.includes(action.payload)){
             const newState = {
             filterCategory: state.filterCategory.filter((id)=>id !== action.payload)
