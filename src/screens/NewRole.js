@@ -28,7 +28,7 @@ const NewRole = ({navigation}) => {
           <Text style={styles.text2}>Madhushan sasanka</Text>
 
           <View>
-          <Pressable onPress={()=>navigation.navigate("Home")}
+          <Pressable onPress={()=>navigation.navigate("New Author")}
             style={({ pressed }) => [
               {
                 backgroundColor: pressed ? "#9ac3f5" : "white",
@@ -43,7 +43,7 @@ const NewRole = ({navigation}) => {
             </Text>
           </Pressable>
 
-          <Pressable onPress={()=>navigation.navigate("Home")}
+          <Pressable onPress={()=>navigation.navigate("New Company")}
             style={({ pressed }) => [
               {
                 backgroundColor: pressed ? "#9ac3f5" : "white",

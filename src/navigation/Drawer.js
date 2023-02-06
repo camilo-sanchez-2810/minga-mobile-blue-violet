@@ -3,13 +3,9 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { createDrawerNavigator, DrawerContentScrollView } from '@react-navigation/drawer';
 import Home from '../screens/Home'
-<<<<<<< HEAD
-import SignIn from '../screens/SignIn'
 import Comics from '../screens/Comics'
 import NewRole from '../screens/NewRole';
-=======
 import SignIn from '../screens/SingIn';
->>>>>>> 30fae1c95e544f50ae4160ec063b56f999cfed92
 import MenuButtons from '../components/MenuButtons';
 import SingUp from "../screens/SingUp"
 import NewCompany from "../screens/NewCompany"
@@ -27,15 +23,12 @@ const DrawerNavigation = () => {
     >
     <Drawer.Screen name="Home" component={Home} />
     <Drawer.Screen name="Sign In" component={SignIn} />
-<<<<<<< HEAD
     <Drawer.Screen name="Comics" component={Comics} />
-    <Drawer.Screen name="NewRole" component={NewRole} />
-=======
+    <Drawer.Screen name="New Role" component={NewRole} />
     <Drawer.Screen name="Sign Out" component={SignOut} />
     <Drawer.Screen name="Sign Up" component={SingUp} />
     <Drawer.Screen name="New Company" component={NewCompany} />
     <Drawer.Screen name="New Author" component={NewAuthor} />
->>>>>>> 30fae1c95e544f50ae4160ec063b56f999cfed92
   </Drawer.Navigator>
   )
 }
@@ -69,6 +62,9 @@ const MenuItems = ({navigation}) => {
         <MenuButtons
       text= 'New Author'
       onPress={() => navigation.navigate('New Author')} />
+       <MenuButtons
+      text= 'New Role'
+      onPress={() => navigation.navigate('New Role')} />
     </DrawerContentScrollView>
   )
 }
