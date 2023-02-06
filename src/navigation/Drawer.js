@@ -65,7 +65,11 @@ const MenuItems = ({navigation}) => {
        <MenuButtons
       text= 'New Role'
       onPress={() => navigation.navigate('New Role')} />
+      <MenuButtons
+      text= 'Comics'
+      onPress={() => navigation.navigate('Comics')} />
     </DrawerContentScrollView>
+    
   )
 }
 
