@@ -13,13 +13,14 @@ const ComicsCards = () => {
     {comics?.map((card, index)=>{
       return(
         <View 
+        // onPress={()=>navigation.navigate("Home")}
         key={index}
         style={styles.containerCards}>
               <View style={styles.textCard}>
                 <Text style={styles.textCardIn}>{card.title}</Text>
                 <Text style={styles.textCardIn}>{card.category_id.name}</Text>
               </View>
-              <Image style={styles.CardImage}source={card.photo} />
+              <Image style={styles.CardImage}source={{uri: 'https://i.pinimg.com/564x/4d/e9/bc/4de9bc80dc7057b42ee35851e3b9f1c2.jpg'}} />
             </View>
             )
     })}
@@ -37,16 +38,17 @@ const styles = StyleSheet.create({
       justifyContent:'space-between',
       borderRadius:20,
       marginTop:10,
-      
+
       
     },
     textCard:{
-       borderLeftWidth: 5,
+       borderLeftWidth: 4,
        borderLeftColor:'blue',
        alignItems:'center',
        justifyContent:'center',
        height:100,
-       marginTop:20
+       marginTop:20,
+       marginBottom:20
        
     },
     textCardIn:{
@@ -56,7 +58,9 @@ const styles = StyleSheet.create({
         borderTopLeftRadius:80,
         borderBottomLeftRadius:80,
         borderBottomRightRadius:20,
-        borderTopRightRadius:20
+        borderTopRightRadius:20,
+        height:150,
+        width:150
     },
     container:{
       height:330

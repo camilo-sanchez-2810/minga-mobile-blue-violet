@@ -7,7 +7,7 @@ import CardsComics from "../components/ComicsCards";
  import { useDispatch } from "react-redux";
  import comicsActions from "../store/comics/actions"
  import { useFocusEffect } from "@react-navigation/native";
-import { useState,useRef } from "react";
+import { useState } from "react";
  const {getComics}= comicsActions
 
 const Comics = () => {
@@ -59,7 +59,7 @@ return(
         />
       </View>
 
-    <View>
+    <View style={styles.categoriesColor}>
         <ComicsCategories />
     </View>
     <View>
@@ -127,6 +127,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     flexDirection: "row",
   },
+
 });
 
 export default Comics;

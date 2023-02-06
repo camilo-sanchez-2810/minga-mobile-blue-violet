@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import React from "react";
 
-const NewRole = () => {
+const NewRole = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.container1}>
@@ -28,7 +28,7 @@ const NewRole = () => {
           <Text style={styles.text2}>Madhushan sasanka</Text>
 
           <View>
-          <Pressable
+          <Pressable onPress={()=>navigation.navigate("Home")}
             style={({ pressed }) => [
               {
                 backgroundColor: pressed ? "#9ac3f5" : "white",
@@ -43,7 +43,7 @@ const NewRole = () => {
             </Text>
           </Pressable>
 
-          <Pressable
+          <Pressable onPress={()=>navigation.navigate("Home")}
             style={({ pressed }) => [
               {
                 backgroundColor: pressed ? "#9ac3f5" : "white",
