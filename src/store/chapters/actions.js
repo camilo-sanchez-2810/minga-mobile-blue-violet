@@ -5,7 +5,7 @@ const getChapters = createAsyncThunk(
     "getChapter",
     async ({id, page, limit}) => {
         try {
-            const response= await axios.get(`http://localhost:8080/api/chapters?comic_id=${id}&page=${page}&${limit}`)
+            const response= await axios.get(`https://minga-backendo.onrender.com/api/chapters?comic_id=${id}&page=${page}&${limit}`)
         return {
             response: {chapter: response.data},
             message: "Chapter obtained"
