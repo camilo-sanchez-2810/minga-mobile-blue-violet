@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { API_URL } from "../../configs";
+import { API_URL } from "../../../configs";
 
 const getChapter = createAsyncThunk(
   'get-chapter',

@@ -3,7 +3,10 @@ import React from 'react'
 import { createDrawerNavigator, DrawerContentScrollView } from '@react-navigation/drawer';
 import Home from '../screens/Home'
 import SignIn from '../screens/SignIn'
+import Comics from '../screens/Comics'
+import NewRole from '../screens/NewRole';
 import MenuButtons from '../components/MenuButtons';
+
 
 const Drawer = createDrawerNavigator()
 
@@ -14,6 +17,8 @@ const DrawerNavigation = () => {
      >
     <Drawer.Screen name="Home" component={Home} />
     <Drawer.Screen name="Sign In" component={SignIn} />
+    <Drawer.Screen name="Comics" component={Comics} />
+    <Drawer.Screen name="NewRole" component={NewRole} />
   </Drawer.Navigator>
   )
 }

@@ -5,7 +5,7 @@ const getReactions = createAsyncThunk(
   //dos parametros,nombre de la accion,y la funcion asincrona
   "getReactions",
   async ({token,inputText="", inputCategory=""}) => {
-    let url =`http://localhost:8080/api/reactions/me?category_id=${inputCategory}&title=${inputText}`
+    let url =`https://minga-backendo.onrender.com/api/reactions/me?category_id=${inputCategory}&title=${inputText}`
     
     let headers = {headers:{'Authorization':`Bearer ${token}`}}
     try {
@@ -31,7 +31,7 @@ const getReactions = createAsyncThunk(
 const deleteLike= createAsyncThunk(
   "deleteLike",
 async ({token,data}) => {
-  let url =`http://localhost:8080/api/reactions/me`
+  let url =`https://minga-backendo.onrender.com/api/reactions/me`
   
   let headers = {headers:{'Authorization':`Bearer ${token}`}}
   try {

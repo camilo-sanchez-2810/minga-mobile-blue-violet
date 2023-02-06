@@ -1,0 +1,59 @@
+button1: {
+        color: '#ef8481',
+        background: #ffe0df,
+        alignSelf:'center'
+      },
+      active1:{
+        background:'#ef8481',
+        color:'#ffe0df',
+      },
+      button2 :{
+       
+        color: '#fc9c57',
+        background: '#ffdfc8',
+        
+      },
+      active2:{
+        background:'#fc9c57',
+        color: '#ffdfc8',
+      },
+      button3 :{
+       
+        color:' #00ba88',
+        background: '#d1fbf0',
+        
+      },
+      active3:{
+        background:'#00ba88',
+        color: '#d1fbf0',
+      },
+      button4 :{
+       
+        color: '#8883f0',
+        background: '#e0dbff',
+        
+      },
+      active4:{
+        background:'#8883f0',
+        color: '#e0dbff',
+      },
+      button5 :{
+       
+        color: '#f083d5',
+        background: '#ffdbfc',
+        
+      },
+      active5:{
+        background:'#f083d5',
+        color: '#ffdbfc',
+      },
+      button6: {
+       
+        color: '#fcff42',
+        background: '#fffedb',
+        
+      },
+      active6:{
+        background:'#fcff42',
+        color: '#fffedb',
+      }
