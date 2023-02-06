@@ -1,5 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit'
 import authActions from './actions'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const { registrar_usuario,iniciar_sesion,iniciar_sesion_con_token,cerrar_sesion } = authActions
 
@@ -48,7 +49,7 @@ const authReducer = createReducer(initialState,
             let newState = {}
             if (success) {
                 const { user,token } = response
-                localStorage.setItem('token',token)
+                AsyncStorage.setItem('token',token)
                 newState = {
                     ...state,
                     mail: user.mail,

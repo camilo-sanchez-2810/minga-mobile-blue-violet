@@ -7,7 +7,10 @@ import chaptersReducer from "./chapters/reducers";
 import filterCategoryReducer from "./comicCategories/reducers"
 import reactionsReducers from "./myReactions/reducers";
 import authReducer from "./auth/reducers";
+<<<<<<< HEAD
 //import donationReducers from "./donations/reducers";
+=======
+>>>>>>> 30fae1c95e544f50ae4160ec063b56f999cfed92
 
 export const store = configureStore({
   reducer: {
@@ -19,7 +22,10 @@ export const store = configureStore({
     chapters: chaptersReducer,
     reactions:reactionsReducers,
     auth: authReducer,
+<<<<<<< HEAD
     //mercadopago: donationReducers
 
+=======
+>>>>>>> 30fae1c95e544f50ae4160ec063b56f999cfed92
   }
 })
